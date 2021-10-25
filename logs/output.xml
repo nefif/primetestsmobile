@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211022 19:56:21.150" rpa="false" schemaversion="2">
-<suite id="s1" name="Mobileautomation" source="C:\Users\NefiProfissional\Desktop\curso prime robot\tests\mobileautomation.robot">
+<robot generator="Robot 4.1.2 (Python 3.9.5 on win32)" generated="20211025 02:03:00.265" rpa="false" schemaversion="2">
+<suite id="s1" name="Mobileautomation" source="C:\Users\NefiProfissional\Desktop\primetestsmobile\tests\mobileautomation.robot">
 <test id="s1-t1" name="Caso de Teste 01: Pesquisar canal “Prime Experts”">
-<kw name="Abrir aplicativo" type="SETUP">
+<kw name="Abrir aplicativo" library="hooks" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
-<arg>5</arg>
+<arg>20</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20211022 19:56:21.386" endtime="20211022 19:56:21.386"/>
+<status status="PASS" starttime="20211025 02:03:00.509" endtime="20211025 02:03:00.509"/>
 </kw>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
@@ -22,110 +22,107 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20211022 19:56:21.386" endtime="20211022 19:56:37.980"/>
+<status status="PASS" starttime="20211025 02:03:00.509" endtime="20211025 02:03:18.464"/>
 </kw>
-<status status="PASS" starttime="20211022 19:56:21.385" endtime="20211022 19:56:37.980"/>
+<status status="PASS" starttime="20211025 02:03:00.508" endtime="20211025 02:03:18.464"/>
 </kw>
-<kw name="Dado que o cliente esteja na tela de Home">
+<kw name="Dado que o cliente esteja na tela de Home​" library="kws_mobileautomation">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>xpath=//*[contains(@text, 'Início')]</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211022 19:56:37.981" endtime="20211022 19:56:42.259"/>
+<status status="PASS" starttime="20211025 02:03:18.465" endtime="20211025 02:03:23.803"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
 <arg>accessibility_id=YouTube</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211022 19:56:42.259" endtime="20211022 19:56:43.372"/>
+<status status="PASS" starttime="20211025 02:03:23.803" endtime="20211025 02:03:23.977"/>
 </kw>
-<status status="PASS" starttime="20211022 19:56:37.981" endtime="20211022 19:56:43.372"/>
+<status status="PASS" starttime="20211025 02:03:18.465" endtime="20211025 02:03:23.977"/>
 </kw>
-<kw name="E pesquise um vídeo sobre &quot;Prime Experts&quot;" sourcename="E pesquise um vídeo sobre &quot;${PESQUISA}&quot;">
+<kw name="E pesquise um vídeo sobre &quot;Prime Experts&quot;​" library="kws_mobileautomation" sourcename="E pesquise um vídeo sobre &quot;${PESQUISA}&quot;​">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>accessibility_id=Pesquisar</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211022 19:56:43.375" level="INFO">Clicking element 'accessibility_id=Pesquisar'.</msg>
-<status status="PASS" starttime="20211022 19:56:43.373" endtime="20211022 19:56:43.602"/>
+<msg timestamp="20211025 02:03:23.982" level="INFO">Clicking element 'accessibility_id=Pesquisar'.</msg>
+<status status="PASS" starttime="20211025 02:03:23.979" endtime="20211025 02:03:24.193"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>id=search_edit_text</arg>
 <arg>${PESQUISA}</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20211022 19:56:43.604" level="INFO">Typing text 'Prime Experts' into text field 'id=search_edit_text'</msg>
-<status status="PASS" starttime="20211022 19:56:43.602" endtime="20211022 19:56:46.156"/>
+<msg timestamp="20211025 02:03:24.195" level="INFO">Typing text 'Prime Experts' into text field 'id=search_edit_text'</msg>
+<status status="PASS" starttime="20211025 02:03:24.193" endtime="20211025 02:03:27.309"/>
 </kw>
 <kw name="Press Keycode" library="AppiumLibrary">
 <arg>66</arg>
 <doc>Sends a press of keycode to the device.</doc>
-<status status="PASS" starttime="20211022 19:56:46.157" endtime="20211022 19:56:47.093"/>
+<status status="PASS" starttime="20211025 02:03:27.309" endtime="20211025 02:03:28.554"/>
 </kw>
-<status status="PASS" starttime="20211022 19:56:43.373" endtime="20211022 19:56:47.094"/>
+<status status="PASS" starttime="20211025 02:03:23.978" endtime="20211025 02:03:28.555"/>
 </kw>
-<kw name="E acessar o canal da Prime">
+<kw name="E acessar o canal da Prime​" library="kws_mobileautomation">
 <kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 73 visualizações - há 1 ano - assistir o vídeo</arg>
+<arg>accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 184 visualizações - há 1 ano - assistir o vídeo</arg>
 <doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211022 19:56:47.095" endtime="20211022 19:56:50.001"/>
+<status status="PASS" starttime="20211025 02:03:28.556" endtime="20211025 02:03:30.679"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
-<arg>accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 73 visualizações - há 1 ano - assistir o vídeo</arg>
+<arg>accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 184 visualizações - há 1 ano - assistir o vídeo</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211022 19:56:50.003" level="INFO">Clicking element 'accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 73 visualizações - há 1 ano - assistir o vídeo'.</msg>
-<status status="PASS" starttime="20211022 19:56:50.001" endtime="20211022 19:56:52.254"/>
+<msg timestamp="20211025 02:03:30.680" level="INFO">Clicking element 'accessibility_id=Prime Experts - Parceria entre Prime Control e UniBrasil - 3 minutos e 38 segundos - Ir ao canal - Prime Control - 184 visualizações - há 1 ano - assistir o vídeo'.</msg>
+<status status="PASS" starttime="20211025 02:03:30.679" endtime="20211025 02:03:32.055"/>
 </kw>
-<status status="PASS" starttime="20211022 19:56:47.095" endtime="20211022 19:56:52.254"/>
+<status status="PASS" starttime="20211025 02:03:28.556" endtime="20211025 02:03:32.055"/>
 </kw>
-<kw name="Quando clicar em Inscrever-se">
+<kw name="Quando clicar em Inscrever-se​" library="kws_mobileautomation">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>accessibility_id=Inscreva-se em Prime Control.</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211022 19:56:52.257" level="INFO">Clicking element 'accessibility_id=Inscreva-se em Prime Control.'.</msg>
-<status status="PASS" starttime="20211022 19:56:52.255" endtime="20211022 19:56:52.873"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>accessibility_id=Inscreva-se em Prime Control.</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20211022 19:56:52.875" level="INFO">Clicking element 'accessibility_id=Inscreva-se em Prime Control.'.</msg>
-<status status="PASS" starttime="20211022 19:56:52.873" endtime="20211022 19:56:53.559"/>
-</kw>
-<status status="PASS" starttime="20211022 19:56:52.255" endtime="20211022 19:56:53.559"/>
-</kw>
-<kw name="Então será apresentado como Inscrito">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>accessibility_id=Cancelar inscrição de Prime Control.</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<status status="PASS" starttime="20211022 19:56:53.560" endtime="20211022 19:56:54.319"/>
-</kw>
-<status status="PASS" starttime="20211022 19:56:53.560" endtime="20211022 19:56:54.320"/>
-</kw>
-<kw name="Fechar aplicativo" type="TEARDOWN">
+<msg timestamp="20211025 02:03:32.058" level="INFO">Clicking element 'accessibility_id=Inscreva-se em Prime Control.'.</msg>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20211022 19:56:56.401" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20211022 19:56:54.321" endtime="20211022 19:56:56.401"/>
+<msg timestamp="20211025 02:03:36.167" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20211025 02:03:34.037" endtime="20211025 02:03:36.167"/>
 </kw>
+<msg timestamp="20211025 02:03:36.170" level="FAIL">ValueError: Element locator 'accessibility_id=Inscreva-se em Prime Control.' did not match any elements.</msg>
+<status status="FAIL" starttime="20211025 02:03:32.056" endtime="20211025 02:03:36.170"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>accessibility_id=Inscreva-se em Prime Control.</arg>
+<doc>Click element identified by `locator`.</doc>
+<status status="NOT RUN" starttime="20211025 02:03:36.171" endtime="20211025 02:03:36.171"/>
+</kw>
+<status status="FAIL" starttime="20211025 02:03:32.056" endtime="20211025 02:03:36.171"/>
+</kw>
+<kw name="Então será apresentado como Inscrito​" library="kws_mobileautomation">
+<status status="NOT RUN" starttime="20211025 02:03:36.172" endtime="20211025 02:03:36.173"/>
+</kw>
+<kw name="Fechar aplicativo" library="hooks" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20211022 19:56:56.402" endtime="20211022 19:56:57.478"/>
+<status status="PASS" starttime="20211025 02:03:36.174" endtime="20211025 02:03:37.296"/>
 </kw>
-<status status="PASS" starttime="20211022 19:56:54.320" endtime="20211022 19:56:57.478"/>
+<status status="PASS" starttime="20211025 02:03:36.173" endtime="20211025 02:03:37.297"/>
 </kw>
-<tag>PRIME</tag>
-<status status="PASS" starttime="20211022 19:56:21.384" endtime="20211022 19:56:57.478"/>
+<tag>CANAL_PRIME</tag>
+<status status="FAIL" starttime="20211025 02:03:00.507" endtime="20211025 02:03:37.298">ValueError: Element locator 'accessibility_id=Inscreva-se em Prime Control.' did not match any elements.</status>
 </test>
 <doc>Testes Mobile</doc>
-<status status="PASS" starttime="20211022 19:56:21.152" endtime="20211022 19:56:57.480"/>
+<status status="FAIL" starttime="20211025 02:03:00.267" endtime="20211025 02:03:37.300"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">PRIME</stat>
+<stat pass="0" fail="1" skip="0">CANAL_PRIME</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Mobileautomation">Mobileautomation</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20211025 02:03:00.500" level="ERROR">Error in file 'C:\Users\NefiProfissional\Desktop\primetestsmobile\resources\keywords\kws_mobileautomation.robot' on line 3: Resource file '..\package.robot' does not exist.</msg>
+<msg timestamp="20211025 02:03:00.504" level="ERROR">Error in file 'C:\Users\NefiProfissional\Desktop\primetestsmobile\resources\hooks.robot' on line 3: Resource file 'package.robot' does not exist.</msg>
 </errors>
 </robot>
